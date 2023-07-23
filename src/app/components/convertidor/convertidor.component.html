@@ -1,0 +1,48 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="mb-3">
+        <label for="cantidad" class="form-label">Cantidad a convertir</label>
+        <input
+          (input)="convert()"
+          [(ngModel)]="quantity"
+          type="number"
+          class="form-control form-control-lg"
+          id="cantidad"
+          placeholder="Ingrese cantidad"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <label for="convertir" class="form-label">De:</label>
+      <select
+        (change)="convert()"
+        [(ngModel)]="have"
+        class="form-select form-control-lg"
+        aria-label="Default select example"
+        id="convertir"
+      >
+        <option *ngFor="let coin of currency">{{ coin }}</option>
+      </select>
+    </div>
+    <div class="col-lg-6">
+      <label for="convertida" class="form-label">a:</label>
+      <select
+        (change)="convert()"
+        [(ngModel)]="want"
+        class="form-select form-control-lg"
+        aria-label="Default select example"
+        id="convertida"
+      >
+        <option *ngFor="let coin of currency">{{ coin }}</option>
+      </select>
+    </div>
+  </div>
+  <h5 *ngIf="quantity > 0" class="text-center mt-4">
+    <span class="badge bg-success">{{ quantity }} {{ have }} </span>
+    <span class="badge bg-secondary">son</span>
+    <span class="badge bg-success">{{ result | number: "0.0-2"}} {{ want }} </span>
+  </h5>
+</div>
