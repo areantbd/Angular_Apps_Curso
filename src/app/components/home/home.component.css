@@ -1,0 +1,7 @@
+.logo{
+  max-height: 70vh;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  buttons = [
+    {path: "/piano", name: "Piano"},
+    {path: "/dados", name: "Dados"},
+    {path: "/tasks", name: "Tasks"},
+    {path: "/bmi", name: "BMI"},
+    {path: "/convertidor", name: "Convertidor"},
+  ]
 }

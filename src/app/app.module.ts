@@ -13,6 +13,7 @@ import { DadosComponent } from './components/dados/dados.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ConvertidorComponent } from './components/convertidor/convertidor.component';
 import { FormsModule } from '@angular/forms';
+import { TareaComponent } from './components/tarea/tarea.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     PianoComponent,
     DadosComponent,
     NavbarComponent,
-    ConvertidorComponent
+    ConvertidorComponent,
+    TareaComponent
   ],
   imports: [
     RouterModule,

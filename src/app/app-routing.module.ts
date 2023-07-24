@@ -8,11 +8,13 @@ import { ResultadoComponent } from './components/bmi/resultado/resultado.compone
 import { PianoComponent } from './components/piano/piano.component';
 import { DadosComponent } from './components/dados/dados.component';
 import { ConvertidorComponent } from './components/convertidor/convertidor.component';
+import { TareaComponent } from './components/tarea/tarea.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'piano', component: PianoComponent },
   { path: 'dados', component: DadosComponent },
+  { path: 'tasks', component: TareaComponent },
   { path: 'convertidor', component: ConvertidorComponent },
   { path: 'bmi', component: InicioComponent },
   { path: 'bmi/resultado/:valor', component: ResultadoComponent },
