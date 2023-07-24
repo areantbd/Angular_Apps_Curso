@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-8 offset-2 col-lg-4 offset-lg-4">
-    <h2 class="title">BMI CALCULATOR</h2>
+    <h2 class="title text-3xl">BMI CALCULATOR</h2>
     <div class="row">
       <div class="col-6">
         <div class="item-bg" [ngClass]="{ 'innactive-sex': sex === 'fem'}">
@@ -24,7 +24,7 @@
         <div class="item-bg">
           <div class="content">
             <h5>Height</h5>
-            <div class="num-style">
+            <div class="num-style mt-1">
               {{ height }}
               <span class="cm">cms</span>
             </div>
@@ -38,7 +38,7 @@
         <div class="item-bg">
           <div class="content">
             <h5>Weight</h5>
-            <div class="num-style">{{ weight }}</div>
+            <div class="num-style mt-1">{{ weight }}</div>
             <div class="buttons">
               <i class="fa fa-minus suma-resta" aria-hidden="true" (click)="weight = weight - 1"></i>
               <i class="fa fa-plus suma-resta" aria-hidden="true" (click)="weight = weight + 1"></i>
@@ -50,7 +50,7 @@
         <div class="item-bg">
           <div class="content">
             <h5>Age</h5>
-            <div class="num-style">{{ age }}</div>
+            <div class="num-style mt-1">{{ age }}</div>
             <div class="buttons">
               <i class="fa fa-minus suma-resta" aria-hidden="true" (click)="age = age - 1"></i>
               <i class="fa fa-plus suma-resta" aria-hidden="true" (click)="age = age + 1"></i>
