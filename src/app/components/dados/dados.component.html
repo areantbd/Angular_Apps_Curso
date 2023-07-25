@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <h1 class="pt-5 text-light text-3xl">Dados App</h1>
+  <h1 class="pt-5 text-light text-3xl font-bold">Dados App</h1>
   <button class="btn btn-success btn-lg mt-5" (click)="tirarDados()">Tirar Dados</button>
   <br>
   <div class="d-flex flex-column justify-center">
@@ -7,7 +7,7 @@
       <img class="image-dice" [src]="dadoIzda">
       <img class="image-dice" [src]="dadoDcha">
     </div>
-    <h1 *ngIf="numero1 === numero2"><span class="badge bg-success text-3xl">YOU WIN!!</span></h1>
+    <h1 *ngIf="numero1 === numero2"><span class="badge bg-success text-3xl">PAREJA!!</span></h1>
 
   </div>
 </div>

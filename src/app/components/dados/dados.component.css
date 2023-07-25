@@ -1,7 +1,12 @@
 .image-dice{
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 100px;
   margin: 20px;
   background-color: rgb(41, 41, 41);
   border-radius: 20px;
+}
+
+.container{
+  max-width: 100vw;
 }
