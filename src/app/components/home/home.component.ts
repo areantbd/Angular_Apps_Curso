@@ -12,5 +12,6 @@ export class HomeComponent {
     {path: "/tasks", name: "Tasks"},
     {path: "/bmi", name: "BMI"},
     {path: "/convertidor", name: "Convertidor"},
+    {path: "/employees", name: "Empleados"},
   ]
 }

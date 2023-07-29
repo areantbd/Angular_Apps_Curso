@@ -1,0 +1,39 @@
+<div class="container px-5 pt-5">
+ 
+  <h1 class="text-3xl text-light text-center font-bold mb-5">Dinamic Employees List</h1>
+
+  <app-employees-count 
+    [all]="totalEmployees()" 
+    [fem]="femaleEmployees()" 
+    [masc]="maleEmployees()"
+    (radioButton)="filteredEmployees($event)"
+  ></app-employees-count>
+  
+  <div class="card mt-3">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >Name</th>
+            <th >LastName</th>
+            <th >Sex</th>
+            <th >Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let employee of employeesList, let i = index">
+            <tr *ngIf="selectedRadioButton === 'all' || selectedRadioButton === employee.sex">
+              <th>{{ i + 1 }}</th>
+              <td>{{ employee.name }}</td>
+              <td>{{ employee.lastName }}</td>
+              <td>{{ employee.sex }}</td>
+              <!-- <td>{{employee.salary | currency: 'EUR'}}</td> -->            
+              <td>{{ employee.salary.toFixed(3) }} €</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

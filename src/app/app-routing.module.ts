@@ -9,6 +9,7 @@ import { PianoComponent } from './components/piano/piano.component';
 import { DadosComponent } from './components/dados/dados.component';
 import { ConvertidorComponent } from './components/convertidor/convertidor.component';
 import { TareaComponent } from './components/tarea/tarea.component';
+import { EmployeesListComponent } from './components/employees-list/employees-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'convertidor', component: ConvertidorComponent },
   { path: 'bmi', component: InicioComponent },
   { path: 'bmi/resultado/:valor', component: ResultadoComponent },
+  { path: 'employees', component: EmployeesListComponent },
   { path: '**', redirectTo: ''} //esta ruta siempre al final
 ]
 

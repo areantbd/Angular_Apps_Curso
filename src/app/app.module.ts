@@ -14,6 +14,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ConvertidorComponent } from './components/convertidor/convertidor.component';
 import { FormsModule } from '@angular/forms';
 import { TareaComponent } from './components/tarea/tarea.component';
+import { EmployeesListComponent } from './components/employees-list/employees-list.component';
+import { EmployeesCountComponent } from './components/employees-list/employees-count/employees-count.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TareaComponent } from './components/tarea/tarea.component';
     DadosComponent,
     NavbarComponent,
     ConvertidorComponent,
-    TareaComponent
+    TareaComponent,
+    EmployeesListComponent,
+    EmployeesCountComponent
   ],
   imports: [
     RouterModule,
