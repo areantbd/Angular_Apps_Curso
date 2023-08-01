@@ -16,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { TareaComponent } from './components/tarea/tarea.component';
 import { EmployeesListComponent } from './components/employees-list/employees-list.component';
 import { EmployeesCountComponent } from './components/employees-list/employees-count/employees-count.component';
+import { GestorCitasComponent } from './components/gestor-citas/gestor-citas.component';
+import { ListCitasComponent } from './components/gestor-citas/list-citas/list-citas.component';
+import { CrearCitasComponent } from './components/gestor-citas/crear-citas/crear-citas.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { EmployeesCountComponent } from './components/employees-list/employees-c
     ConvertidorComponent,
     TareaComponent,
     EmployeesListComponent,
-    EmployeesCountComponent
+    EmployeesCountComponent,
+    GestorCitasComponent,
+    ListCitasComponent,
+    CrearCitasComponent
   ],
   imports: [
     RouterModule,

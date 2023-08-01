@@ -15,7 +15,7 @@ export class EmployeesListComponent {
     {name: "Noelia", lastName: "Gonzalez", sex: "Fem", salary: 24.000},
     {name: "Marta", lastName: "Varela", sex: "Fem", salary: 26.000}
   ]
-
+  window = window.innerWidth
   selectedRadioButton = "all"
 
   totalEmployees(): number {

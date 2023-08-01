@@ -10,6 +10,7 @@ import { DadosComponent } from './components/dados/dados.component';
 import { ConvertidorComponent } from './components/convertidor/convertidor.component';
 import { TareaComponent } from './components/tarea/tarea.component';
 import { EmployeesListComponent } from './components/employees-list/employees-list.component';
+import { GestorCitasComponent } from './components/gestor-citas/gestor-citas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'bmi', component: InicioComponent },
   { path: 'bmi/resultado/:valor', component: ResultadoComponent },
   { path: 'employees', component: EmployeesListComponent },
+  { path: 'citas', component: GestorCitasComponent },
   { path: '**', redirectTo: ''} //esta ruta siempre al final
 ]
 

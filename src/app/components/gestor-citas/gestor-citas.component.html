@@ -1,0 +1,13 @@
+<div class="fondo">
+  <div class="container pt-3">
+    <h1 class="text-center title">Gestor de citas</h1>
+    <div class="row mt-4">
+      <div class="col-6">
+        <app-crear-citas (nuevaCita)="anadirCita($event)"></app-crear-citas>
+      </div>
+      <div class="col-6">
+        <app-list-citas [listadoCitas]="listaCitas" (borrarCita)="eliminarCita($event)"></app-list-citas>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.title {
+  font-family: 'Kanit', sans-serif;
+  font-size: 3rem;
+  color: rgb(231, 231, 230);
+}
+
+.fondo{
+  background-image: url(../../../assets/img/fondoVentana.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+}

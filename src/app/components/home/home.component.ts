@@ -13,5 +13,6 @@ export class HomeComponent {
     {path: "/bmi", name: "BMI"},
     {path: "/convertidor", name: "Convertidor"},
     {path: "/employees", name: "Empleados"},
+    {path: "/citas", name: "Gestor citas"},
   ]
 }
