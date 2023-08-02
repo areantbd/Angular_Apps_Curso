@@ -9,6 +9,9 @@ export class GestorCitasComponent {
   title(title: any) {
     throw new Error('Method not implemented.');
   }
+
+  window = window.innerWidth
+  
   listaCitas: any[] = [
     {nombre: "Test", fecha: "19/04/2022", hora: "18:05", sintomas: "test"},
     {nombre: "Test2", fecha: "19/04/2022", hora: "18:05", sintomas: "test"},
